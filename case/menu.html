@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       #container{
+           height: 100%;
+           width: 100%;
+           position: fixed;
+       }
+        #main{
+            height: 100%;
+            width: 100%;
+            background-color: springgreen;
+            position: relative;
+            transition: all 0.5s;
+        }
+        #menue{
+            height: 100%;
+            background-color: hotpink;
+            width: 200px;
+            position: absolute;
+        }
+        .move{
+            transform: translate(200px);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="menue">
+            <ul>
+                <li><a href="#">天津</a></li>
+                <li><a href="#">天气</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">景点</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <input id="btn" type="button" value="click me">
+        </div>
+
+    </div>
+
+</body>
+</html>
+<script src="../resources/jquery/jquery.js"></script>
+<script>
+
+    $(function(){
+
+        $("#btn").click(function(){
+            $("#main").toggleClass("move");
+        })
+    })
+
+</script>

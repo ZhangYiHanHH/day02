@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .border{
+            border: 1px solid red;
+        }
+        .all{
+            width: 100%;
+            height: 100%;
+        }
+        .daohang{
+            width: 100%;
+            height: 45px;
+            background-color:royalblue;
+            display: flex;
+            flex-flow: row;
+        }
+        .d1{
+            flex: 1px;
+        }
+        .dao{
+            width:100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-right: 2px solid white;
+            color: white;
+            display: inline-block;
+        }
+        .dao:hover{
+            background-color: darkred;
+        }
+        .d2{
+            flex: 1px;
+            display:flex;
+            flex-flow: row ;
+            justify-content:right;
+        }
+        .search{
+            width: 10%;
+            border-radius: 10%;
+
+        }
+        .searchh{
+            width: 10%;
+            border-radius: 5%;
+            background-color:pink;
+        }
+        .container{
+            width: 100%;
+            height: 820px;
+            margin-top: 3px;
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+
+        }
+        .left{
+            flex: 1px;
+            height: 320px;
+            /*position: absolute;*/
+            /*left: 158px;*/
+            border: 10px solid whitesmoke;
+        }
+        .img{
+            width: 180px;
+            height: 100px;
+            background-image: url(../img/paris.jpg);
+            position: relative;
+        }
+        .pict{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -20px;
+            left: 70px;
+            background-image: url(../img/hadoop.jpg);
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 0 5px black;
+        }
+        .lname{
+            width: 100%;
+            height: 20px;
+            margin:30px auto 5px auto;
+            font-weight: 700;
+            text-align: center;
+        }
+        .content{
+            height: 70px;
+            margin: 10px 10px 0 10px;
+            font-size: 14px;
+        }
+        .tell{
+
+            height: 60px;
+            font-weight: 700;
+        }
+        .a{
+            width: 45%;
+            height: 40px;
+            display: inline-block;
+            margin-left:5px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .center{
+            height:800px ;
+            flex: 2px;
+            /*position: absolute;*/
+            /*left: 350px;*/
+            border: 10px solid whitesmoke;
+        }
+        .text{
+            height: 120px;
+            margin-top: 10px;
+        }
+        .tt{
+            height: 110px;
+            width: 90%;
+            border-radius: 5%;
+            border: 3px solid darkgrey;
+            margin-left: 20px;
+
+        }
+        .send{
+            height: 30px;
+            width: 80px;
+            background-color: deepskyblue;
+            text-align: center;
+            position: absolute;
+            bottom:20px;
+            right: 20px;
+        }
+
+        .ctop{
+            width: 500px;
+            height: 200px;
+            border-bottom: 3px solid whitesmoke;
+        }
+        .ctb{
+            position: absolute;
+            height: 70px;
+            width: 500px;
+        }
+        .cbottom{
+            width:500px;
+            height: 600px;
+        }
+        .talk{
+            width: 500px;
+            height: 200px;
+            position: relative;
+        }
+        .oimg{
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            position: absolute;
+            left:30px;
+            top:20px;
+          }
+        .owords{
+            width:350px ;
+            height: 150px;
+            margin: 20px;
+            background-color:#E0E0E0;
+            border-radius: 0 5% 5% 0;
+            position: absolute;
+            top:2px;
+            right: 20px;
+            border-left: 2px solid royalblue;
+
+        }
+        .mimg{
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            border-radius: 50%;
+            position: absolute;
+            right:30px;
+            top:20px;
+        }
+        .mwords{
+            width:350px ;
+            height: 150px;
+            margin: 20px;
+            background-color:navajowhite;
+            border-radius:  5% 0 0 5% ;
+            position: absolute;
+            top:2px;
+            left: 20px;
+            border-right: 2px solid royalblue;
+        }
+        .name{
+            color: royalblue;
+            height: 20px;
+            margin:5px auto auto 5px ;
+        }
+        .m-name{
+            color: royalblue;
+            height: 20px;
+            width: 20px;
+            margin:5px 10px auto auto  ;
+        }
+        .right{
+            flex: 1px;
+            height: 250px;
+            /*position: absolute;*/
+            /*right: 145px;*/
+            border: 10px solid whitesmoke;
+            border-radius: 5%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="all">
+  <div class="daohang">
+      <div class="d1 border">
+      <div class="dao">Home</div>
+      <div class="dao">Profile</div>
+      <div class="dao">Messages</div>
+      <div class="dao">Settings</div>
+      </div>
+      <div class="d2 border">
+      <input type="text" class="search border" value="search...">
+      <div class="searchh border"></div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="left border">
+          <div class="img">
+              <div class="pict"></div>
+          </div>
+          <div class="lname">Neusoft</div>
+          <div class="content">welcome to neusoft.learn java and h5 from Neusoft.</div>
+          <div class="tell">
+              <div class="a">Friends<br>28</div>
+              <div class="a">Star<br>26</div>
+          </div>
+      </div>
+      <div class="center border">
+          <div class="ctop">
+              <div class="text"><input type="text" class="tt" value="enter some message..."></div>
+              <div class="ctb">
+              <div class="send">send</div>
+              </div>
+          </div>
+          <div class="cbottom">
+              <div class="talk">
+                  <div class="oimg" style="background-image: url(../img/github.png)"></div>
+                  <div class="owords">
+                      <div class="name">Tom</div>
+                  </div>
+              </div>
+              <div class="talk">
+                  <div class="oimg" style="background-image: url(../img/paris.jpg)"></div>
+                  <div class="owords">
+                      <div class="name">Jeney</div>
+                  </div>
+              </div>
+              <div class="talk">
+                  <div class="mimg" style="background-image: url(../img/hadoop.jpg)"></div>
+                  <div class="mwords">
+                      <div class="m-name">Me</div>
+                  </div>
+              </div>
+              <div class="bright"></div>
+          </div>
+      </div>
+      <div class="right">talk something about yourself..</div>
+  </div>
+</div>
+</body>
+</html>
